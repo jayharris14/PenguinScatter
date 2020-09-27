@@ -7,9 +7,9 @@ var finals=penguin.map(finalgrade)
 
 var quizgrade=penguin.quizes.grade
 var quizess=penguin.map(quizgrade)}
-var successFCN=function(penguins)
-{console.log("Data Collection", penguins)
-allpenguin(penguins)
+var successFCN=function(penguin)
+{console.log("Data Collection", penguin)
+allpenguin(penguin)
  }
 
 var failFCN=function(errormessage)
