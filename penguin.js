@@ -1,19 +1,21 @@
 var penguinPromise=d3.json("classData.json");
 
+var allpenguin= function(penguin) {
+var finalgrade= penguins.final.grade
+
+var finals=penguins.map(finalgrade)
+
+var quizgrade=penguin.quizes.grade
+var quizess=penguin.map(quizgrade)}
 var successFCN=function(penguins)
-{console.log("Data Collection", penguins)}
+{console.log("Data Collection", penguins)
+allpenguin(penguins)
+ }
 
 var failFCN=function(errormessage)
 {console.log("something went wrong", errormessage)}
 
 penguinPromise.then(successFCN, failFCN)
-
-var finalgrade= penguin.final.grade
-
-var finals=penguin.map(finalgrade)
-
-var quizgrade=penguin.quizes.grade
-var quizess=penguin.map(quizgrade)
 
 drawPlot=function(quizess,finals, xScale, yscale)
 {
