@@ -27,7 +27,7 @@ drawPlot=function(quizess,finals, xScale, yscale)
   .attr("cy", function(penguin)
   {return yscale(penguin.quizess)})
 }
-var intial graph=function(penguins)
+var intialgraph=function(penguins)
 { var screen= {width:600, heigh:600}
 d3.select("graph")
 .attr("width", screen.width)
