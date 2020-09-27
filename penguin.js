@@ -34,9 +34,10 @@ d3.select("graph")
 .attr("height", screen.height)
 
 var xscale=d3.scalelinear()
-.domain{[0,1]}
-.range{[0,screen.width]}
+.domain([0,1])
+.range([0,screen.width])
 
 var yscale=d3.scalelinear()
-.domain{[0,100]}
-.range{[screen.height,0]}
+.domain([0,100])
+.range([screen.height,0])
+}
