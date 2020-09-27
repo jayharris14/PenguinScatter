@@ -15,7 +15,6 @@ var finals=penguin.map(finalgrade)
 var quizgrade=penguin.quizes.grade
 var quizess=penguin.map(quizgrade)
 
-var drawPlot(finals, quizgrade, xscale, yscale)
 {
   d3.select("graph")
   .selectAll("circle")
@@ -43,4 +42,4 @@ var yscale=d3.scalelinear()
 
 
 
-drawPlot(finals, quizgrade, xscale, yscale)
+
