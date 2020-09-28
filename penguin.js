@@ -9,11 +9,14 @@ var quizgrade=penguin.quizes[1]
 var quizess=penguin.map(quizgrade)}
 var successFCN=function(penguin)
 {console.log("Data Collection", penguin)
-var finalgrade= penguin.final[1]
+var finalgrade= function(penguin){
+  return penguin.final[1]
+}
 
 var finals=penguin.map(finalgrade)
 
-var quizgrade=penguin.quizes[1]
+var quizgrade=function(penguin)
+{return penguin.quizes[1]}
 var quizess=penguin.map(quizgrade)}
 
 var failFCN=function(errormessage)
