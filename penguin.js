@@ -1,11 +1,11 @@
 var penguinPromise=d3.json("classData.json");
 
 var allpenguin= function(penguin) {
-var finalgrade= penguin.final.grade
+var finalgrade= penguin.final[1]
 
 var finals=penguin.map(finalgrade)
 
-var quizgrade=penguin.quizes.grade
+var quizgrade=penguin.quizes[1]
 var quizess=penguin.map(quizgrade)}
 var successFCN=function(penguin)
 {console.log("Data Collection", penguin)
